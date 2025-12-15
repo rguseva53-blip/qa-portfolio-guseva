@@ -1,4 +1,5 @@
 import requests
+import pytest
 
 
 BASE_URL = "https://reqres.in"
@@ -32,7 +33,4 @@ def test_get_non_existing_user():
 
     assert response.status_code == 404
     assert response.text == "{}"
-
-
-0
 
